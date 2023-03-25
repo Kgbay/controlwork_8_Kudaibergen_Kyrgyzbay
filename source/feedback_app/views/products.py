@@ -37,7 +37,7 @@ class ProductUpdateView(GroupPermissionMixin, SuccessMessageMixin, UpdateView):
         return reverse('product_view', kwargs={'pk': self.object.pk})
 
 
-class ProductDeleteView(GroupPermissionMixin, SuccessMessageMixin, DeleteView:
+class ProductDeleteView(GroupPermissionMixin, SuccessMessageMixin, DeleteView):
     template_name = 'product_confirm_remove.html'
     model = Product
     success_url = reverse_lazy('index')
