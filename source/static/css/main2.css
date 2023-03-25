@@ -111,9 +111,15 @@ footer {
     text-align: center;
     border: solid 1px gray;
 }
-.search_form, .current-page, .form-confirm {
+.current-page, .form-confirm {
     border-color: transparent !important;
 }
 .current-page {
     height: auto;
+}
+.form-search {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    border-color: transparent !important;
 }

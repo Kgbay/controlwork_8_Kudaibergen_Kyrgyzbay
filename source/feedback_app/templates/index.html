@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="container">
+        {% include 'partial/search.html' %}
+        <h1>Список товаров</h1>
+        <div class="products-card">
+        {% for product in products %}
+                <div class="card" style="width: 20rem;">
+                      <img src="static {{ product.image}}" class="card-img-top" alt="Рисунок {{ product.name }}">
+                      <div class="card-body">
+                          <h5 class="card-title">{{ product.name }}</h5>
+                          <p class="card-text">{{ product.category }} </p>
+                          <p class="card-text">{{ product.description }}</p>
+                          <a href="{% url 'product_view' product.pk %}" class="btn btn-primary" title="Подробнее"><i class="fa fa-info" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+        {% endfor %}
+        </div>
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+    </div>
+{% endblock content %}
