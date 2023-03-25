@@ -1,14 +1,17 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
-from django.db.models import TextChoices
+from django.db.models import IntegerChoices
 
-class GradeChoice(TextChoices):
-    FIVE = 5
-    FOUR = 4
-    THREE = 3
-    TWO = 2
-    ONE = 1
+from feedback_app.models import Product
+
+
+class GradeChoice(IntegerChoices):
+    FIVE = (5, 'Отлично')
+    FOUR = (4, 'Хорошо')
+    THREE = (3, 'Среднее')
+    TWO = (2, 'Плохо')
+    ONE = (1, 'Очень Плохо')
 
 
 class Review(models.Model):
@@ -17,8 +20,7 @@ class Review(models.Model):
         on_delete=models.CASCADE
     )
     product = models.ForeignKey(
-        'feedback_app.Product',
-        related_name='products',
+        Product,
         on_delete=models.CASCADE,
         verbose_name='Продукты'
     )
@@ -27,12 +29,11 @@ class Review(models.Model):
         null=False,
         verbose_name='Текст отзыва'
     )
-    grade = models.CharField(
-        max_length=100,
+    grade = models.IntegerField(
         null=False,
-        verbose_name='Категория',
+        verbose_name='Оценка',
         choices=GradeChoice.choices,
-        default=GradeChoice.ONE
+        default=GradeChoice.THREE
     )
     created_at = models.DateTimeField(
         auto_now_add=True,

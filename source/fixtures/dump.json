@@ -1,0 +1,240 @@
+[
+{
+  "model": "feedback_app.product",
+  "pk": 2,
+  "fields": {
+    "name": "Playstation 5",
+    "category": "Games",
+    "description": "Игрова́я приста́вка (игровая консоль) — специализированное электронное устройство, предназначенное для видеоигр.",
+    "image": "user_picture/download.jpeg",
+    "created_at": "2023-03-25T07:03:18.662Z",
+    "updated_at": "2023-03-25T07:03:18.662Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 3,
+  "fields": {
+    "name": "Палки скандинавской ходьбы",
+    "category": "Health",
+    "description": "Скандина́вская ходьба́ (англ. Nordic Walking, фин. Sauvakävely) — ходьба с палками, вид физической активности, в которой используются определенная методика.",
+    "image": "user_picture/dmpjytwl6r1bt5ra4v3z5voefaricr1v.jpeg",
+    "created_at": "2023-03-25T07:06:18.724Z",
+    "updated_at": "2023-03-25T07:06:18.724Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 4,
+  "fields": {
+    "name": "Боксерская перчатка",
+    "category": "Sport",
+    "description": "Боксёрские перчатки (боксы) — класс элементов боксёрской экипировки, служащих для обеспечения безопасности как самого спортсмена",
+    "image": "user_picture/87091042_w640_h640_bokserskie-perchatki.jpg",
+    "created_at": "2023-03-25T07:07:22.785Z",
+    "updated_at": "2023-03-25T07:07:22.785Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 5,
+  "fields": {
+    "name": "Мужской парфюм",
+    "category": "Beauty",
+    "description": "Духи включают в себя больше всего эфирных масел. Поэтому они имеют более стойкий аромат. Разница особенно очевидна, если приходится ставить их рядом с туалетной водой.",
+    "image": "user_picture/download_1.jpeg",
+    "created_at": "2023-03-25T07:09:39.164Z",
+    "updated_at": "2023-03-25T07:09:39.164Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 6,
+  "fields": {
+    "name": "Зеленый чай",
+    "category": "Other",
+    "description": "Зелёный чай — чай, подвергнутый минимальной ферментации (окислению). Заваривание листьев зелёного чая в гайвани.",
+    "image": "user_picture/2042.png",
+    "created_at": "2023-03-25T07:11:17.547Z",
+    "updated_at": "2023-03-25T07:11:17.548Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 7,
+  "fields": {
+    "name": "Пальто",
+    "category": "Clothes",
+    "description": "Пальто́ (от фр. paletot) — разновидность мужского и женского верхнего платья для прохладной и холодной погоды.",
+    "image": "user_picture/download_2.jpeg",
+    "created_at": "2023-03-25T07:38:50.360Z",
+    "updated_at": "2023-03-25T07:38:50.360Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.product",
+  "pk": 8,
+  "fields": {
+    "name": "Кухонный комбайн",
+    "category": "Kitchen",
+    "description": "Ку́хонный комба́йн — многофункциональный электро-механический бытовой прибор, предназначенный для обработки различных продуктов.",
+    "image": "user_picture/kombayn_k.png",
+    "created_at": "2023-03-25T07:39:45.630Z",
+    "updated_at": "2023-03-25T07:39:45.630Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 1,
+  "fields": {
+    "author": 4,
+    "product": 2,
+    "text": "Отлично",
+    "grade": 5,
+    "created_at": "2023-03-25T07:32:28.346Z",
+    "updated_at": "2023-03-25T07:32:28.346Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 2,
+  "fields": {
+    "author": 4,
+    "product": 4,
+    "text": "Качество плохое",
+    "grade": 2,
+    "created_at": "2023-03-25T07:33:01.530Z",
+    "updated_at": "2023-03-25T07:33:01.530Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 3,
+  "fields": {
+    "author": 2,
+    "product": 2,
+    "text": "Хорошие игры и сама приставка",
+    "grade": 4,
+    "created_at": "2023-03-25T07:33:25.136Z",
+    "updated_at": "2023-03-25T07:33:25.136Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 4,
+  "fields": {
+    "author": 2,
+    "product": 3,
+    "text": "Металлическая часть очень ненадежная",
+    "grade": 3,
+    "created_at": "2023-03-25T07:33:52.314Z",
+    "updated_at": "2023-03-25T07:33:52.314Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 5,
+  "fields": {
+    "author": 2,
+    "product": 6,
+    "text": "Запах приятный, но вкус немного терпкий",
+    "grade": 1,
+    "created_at": "2023-03-25T07:34:25.096Z",
+    "updated_at": "2023-03-25T07:34:25.096Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 6,
+  "fields": {
+    "author": 3,
+    "product": 5,
+    "text": "Купила своему мужу, очень понравился парфюм",
+    "grade": 5,
+    "created_at": "2023-03-25T07:34:51.494Z",
+    "updated_at": "2023-03-25T07:34:51.494Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 7,
+  "fields": {
+    "author": 3,
+    "product": 3,
+    "text": "Начала заниматься и пока неизвестно что ожидать",
+    "grade": 3,
+    "created_at": "2023-03-25T07:35:15.839Z",
+    "updated_at": "2023-03-25T07:35:15.839Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 8,
+  "fields": {
+    "author": 2,
+    "product": 5,
+    "text": "Хорший парфюм, цитрусов много",
+    "grade": 4,
+    "created_at": "2023-03-25T07:36:17.045Z",
+    "updated_at": "2023-03-25T07:36:17.045Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 9,
+  "fields": {
+    "author": 3,
+    "product": 8,
+    "text": "Мощное устройство",
+    "grade": 5,
+    "created_at": "2023-03-25T07:40:58.871Z",
+    "updated_at": "2023-03-25T07:40:58.871Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "feedback_app.review",
+  "pk": 10,
+  "fields": {
+    "author": 2,
+    "product": 7,
+    "text": "Всегда мечтал купить такое пальто",
+    "grade": 5,
+    "created_at": "2023-03-25T07:41:21.349Z",
+    "updated_at": "2023-03-25T07:41:21.349Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}
+]

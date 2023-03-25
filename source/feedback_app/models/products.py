@@ -8,6 +8,8 @@ class CategoryChoice(TextChoices):
     HEALTH = ('Health', 'Здоровье')
     SPORT = ('Sport', 'Спорт')
     BEAUTY = ('Beauty', 'Красота')
+    KITCHEN = ('Kitchen', 'Кухня')
+    CHOTHES = ('Clothes', 'Одежда')
     OTHER = ('Other', 'Разное')
 
 
