@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .btn-primary {
     background-color: #00008B !important;
@@ -117,9 +117,16 @@ footer {
 .current-page {
     height: auto;
 }
+.logout-btn {
+    border-color: transparent !important;
+    padding: 0 !important;
+}
 .form-search {
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
+    border-color: transparent !important;
+}
+.form-rm-confirm {
     border-color: transparent !important;
 }

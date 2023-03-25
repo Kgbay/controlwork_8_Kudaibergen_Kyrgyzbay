@@ -31,7 +31,7 @@
                     <form action="{% url 'logout' %}" method="post" class="logout-btn">
                             {% csrf_token %}
                             <input type="submit" value="Выйти" class="btn btn-outline-primary">
-                        <p href="#" class="btn btn-outline-primary">{{ user.username }}</p>
+                        <a href="{% url 'profile' user.pk %}" class="btn btn-outline-primary">{{ user.username }}</a>
                     </form>
                     {% else %}
                     <a href="{% url 'login' %}" class="btn btn-outline-primary">Войти</a>
