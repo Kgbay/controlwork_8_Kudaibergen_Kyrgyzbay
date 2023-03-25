@@ -1,0 +1,119 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    margin: 0 !important;
+    padding: 0;
+}
+.navbar, .footer {
+    background-color: #00008B !important;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.btn {
+    margin: 5px;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+.navbar-brand {
+    font-size: 30px !important;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+}
+.btn-outline-primary, .navbar-brand {
+    border-color: white !important;
+    color: white !important;
+}
+.btn-outline-primary:hover {
+    background-color: white !important;
+    color: #00008B !important;
+}
+.container {
+    margin: auto;
+    padding: 5px;
+}
+.card {
+    margin-top: 20px;
+}
+.products-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn-primary {
+    background-color: #00008B !important;
+    border-color: white !important;
+    border-radius: 10px !important;
+}
+form, .form-control {
+    border-color: #00008B !important;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color: #00008B !important;
+    color: white;
+}
+.rm-btn:hover {
+    background-color: red !important;
+    border-style: solid;
+    border-color: red !important;
+}
+.upd-btn:hover {
+    background-color: green !important;
+}
+.red-btn {
+    background-color: red !important;
+}
+footer {
+    height: 100px;
+    width: auto;
+    margin-top: auto;
+    margin: 0;
+}
+.pagination {
+    text-align: center;
+}
+.pagination a, .pagination .page-disabled {
+    display: inline-block;
+    border: solid 1px #6a7ddd;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3px;
+}
+.pagination a {
+    background: #6a7ddd;
+    color: white;
+    text-decoration: none;
+}
+.pagination a:hover {
+    background: #6a7dff;
+    text-decoration: underline;
+}
+.pagination .page-disabled {
+    background: #6a7dcc;
+    color: #dddddd
+}
+.pagination .current-page {
+    display: inline-block;
+}
+.pagination .current-page input {
+    width: 50px;
+    padding: 5px 7px;
+    font-size: inherit;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 1px gray;
+}
+.search_form, .current-page, .form-confirm {
+    border-color: transparent !important;
+}
+.current-page {
+    height: auto;
+}
